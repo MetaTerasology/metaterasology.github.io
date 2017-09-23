@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Blocks &mdash; Terasology  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Terasology  documentation" href="../../index.html"/>
+        <link rel="up" title="Developer Guides" href="../developing.html"/>
+        <link rel="next" title="Block Definition" href="blockDefinition.html"/>
+        <link rel="prev" title="Developer Guides" href="../developing.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Terasology
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../projectOverview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#codebase-structure">Codebase-Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#sites">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#github-organizations">GitHub Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#external-projects">External Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#history-and-more">History and more</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../developerIntro/developerIntro.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/quickStart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/lightWorkspace.html">Light Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#using-the-github-web-interface">Using the GitHub Web Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#creating-and-deleting-branches">Creating and Deleting Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#editing">Editing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#opening-a-pull-request">Opening a Pull Request</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#using-the-github-desktop-client">Using the GitHub Desktop Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#setting-up-the-client">Setting Up the Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#cloning-your-repository">Cloning Your Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#creating-a-branch">Creating a Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#making-changes-and-committing">Making Changes and Committing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#opening-pull-requests">Opening Pull Requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/fullWorkspace.html">Full Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#run-game-from-source">Run game from source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#eclipse">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#git">Git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/usingIrc.html">Using IRC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/usingIrc.html#irc-user-setup">IRC User Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/usingIrc.html#gooey">Gooey</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/commonIssues.html">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#game">Game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#java">Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#arch-gentoo-random-problems">Arch/Gentoo random problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts/concepts.html">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/blockWorld.html">Block World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/entitySystem.html#entities-and-components">Entities and Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/entitySystem.html#component-systems">Component Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/entitySystem.html#events">Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/assetSystem.html">Asset System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/assetSystem.html#prefabs">Prefabs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#structure-of-modules">Structure of Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#module-txt">module.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#namespace">Namespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#guides">Guides</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/multiplayer.html">Networking and Multiplayer</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../developing.html">Developer Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="blockDefinition.html">Block Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="accessingBlocks.html">Accessing Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blockAttributes.html">Block Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#inheritance">Inheritance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#informational">Informational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#core-behavioural">Core behavioural</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#tiles">Tiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#rendering-options">Rendering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#color-lookup-tables">Color Lookup Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#shapes-and-rotation">Shapes and Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#collisions">Collisions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#entity-system-integration">Entity System Integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#inventory-settings">Inventory Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockAttributes.html#categories">Categories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="blockShapes.html">Shapes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="blockShapes.html#block-shape-basics">Block Shape Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapes.html#shape-parts">Shape Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapes.html#colliders">Colliders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapes.html#shape-example">Shape Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="blockShapesInBlender.html">Block Shapes In Blender</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="blockShapesInBlender.html#block-shape-addon-installation">Block Shape Addon Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapesInBlender.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapesInBlender.html#tips-when-creating-a-shape">Tips When Creating A Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapesInBlender.html#terasology-exporter-addon-properties">Terasology Exporter Addon Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockShapesInBlender.html#block-shape-video-tutorial">Block Shape Video Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="blockFamilies.html">Block Families</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../entitySystem/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../entitySystem/events.html">Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#defining-events">Defining events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#sending-events">Sending events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#processing-events">Processing events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#consumable-events">Consumable events</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../entitySystem/dependencyInjection.html">Dependency Injection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/dependencyInjection.html#inject-an-instance">Inject an Instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/dependencyInjection.html#share-a-class">Share a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/dependencyInjection.html#how-it-works">How it works</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../entitySystem/commands.html">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#command-structure">Command structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#annotation-and-command-name">Annotation and Command Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#short-descriptions-and-help-text">Short Descriptions and Help Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#displaying-text">Displaying Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#commands-and-multiplayer">Commands and Multiplayer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#terasology-s-git-setup">Terasology’s Git Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#fetching-existing-modules">Fetching existing Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#create-a-new-module">Create a new Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#dependency-resolution">Dependency Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#modding-api-sandboxing">Modding API &amp; Sandboxing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networkMultiplayer/networkMultiplayer.html">Networking and Multiplayer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../networkMultiplayer/networkEntity.html">Entities, Components on the Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../networkMultiplayer/networkEntity.html#replicate-annotation">Replicate annotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../networkMultiplayer/networkEntity.html#network-component">Network Component</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../networkMultiplayer/networkEvents.html">Network Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../networkMultiplayer/networkEvents.html#serverevent">ServerEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../networkMultiplayer/networkEvents.html#broadcastevent">BroadcastEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../networkMultiplayer/networkEvents.html#ownerevent">OwnerEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../input.html">User Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../input.html#define-bindings">Define Bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../input.html#input-categories">Input Categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../input.html#handling-input-events">Handling Input Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../translation.html">Translation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../translation.html#internationalization-i18n">Internationalization / i18n</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translation.html#localization-l10n">Localization / l10n</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../translation.html#using-weblate">Using Weblate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../translation.html#manual-translation">Manual Translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../workflow/workflow.html">Conventions and Workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#updating-a-fork">Updating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#creating-a-pull-request">Creating a Pull Request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#direct-write-access">Direct Write Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/versioning.html">Versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/versioning.html#snapshots">Snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/versioning.html#making-a-release">Making a Release</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/documentationJavaDoc.html">Documentation (JavaDoc)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#general-formatting">General Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#first-sentence">First Sentence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#html-tags">HTML Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#block-tags">Block Tags</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#code-and-link">&#64;code and &#64;link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#param-return-and-throws">&#64;param, &#64;return, and &#64;throws</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#author">&#64;author</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#what-to-document">What to Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#public-and-protected">Public and Protected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#null-tolerance-pre-and-postconditions">null-tolerance, Pre- and Postconditions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#generate-html-javadoc">Generate HTML JavaDoc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/documentationExternal.html">Documentation (External)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationExternal.html#sphinx-documentation">Sphinx Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#headlines">Headlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#javadoc-links">JavaDoc Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#external-links">External Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#code-snippets">Code Snippets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/unitTests.html">Unit Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#why-tests">Why Tests?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#testing-libraries">Testing Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#guidelines-for-tests">Guidelines for Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#game-environment-tests">Game Environment Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../playing/playing.html">Playing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../playing/controls.html">Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../playing/console.html">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../playing/serverHosting.html">Server Hosting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://oniatus.github.io/javadoc/index.html">JavaDoc (External)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Terasology</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../developing.html">Developer Guides</a> &raquo;</li>
+        
+      <li>Blocks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developing/blocks/blocks.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="blocks">
+<span id="id1"></span><h1>Blocks<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="blockDefinition.html">Block Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accessingBlocks.html">Accessing Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockAttributes.html">Block Attributes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#inheritance">Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#informational">Informational</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#core-behavioural">Core behavioural</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#tiles">Tiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#rendering-options">Rendering Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#color-lookup-tables">Color Lookup Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#shapes-and-rotation">Shapes and Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#collisions">Collisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#physics">Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#entity-system-integration">Entity System Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#inventory-settings">Inventory Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockAttributes.html#categories">Categories</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="blockShapes.html">Shapes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="blockShapes.html#block-shape-basics">Block Shape Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapes.html#shape-parts">Shape Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapes.html#colliders">Colliders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapes.html#shape-example">Shape Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="blockShapesInBlender.html">Block Shapes In Blender</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="blockShapesInBlender.html#block-shape-addon-installation">Block Shape Addon Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapesInBlender.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapesInBlender.html#tips-when-creating-a-shape">Tips When Creating A Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapesInBlender.html#terasology-exporter-addon-properties">Terasology Exporter Addon Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockShapesInBlender.html#block-shape-video-tutorial">Block Shape Video Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="blockFamilies.html">Block Families</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="blockDefinition.html" class="btn btn-neutral float-right" title="Block Definition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../developing.html" class="btn btn-neutral" title="Developer Guides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terasology.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

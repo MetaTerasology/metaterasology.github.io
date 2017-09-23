@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Light Workspace Setup &mdash; Terasology  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Terasology  documentation" href="../index.html"/>
+        <link rel="up" title="Getting Started" href="developerIntro.html"/>
+        <link rel="next" title="Full Workspace Setup" href="fullWorkspace.html"/>
+        <link rel="prev" title="Quick Start" href="quickStart.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Terasology
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../projectOverview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#codebase-structure">Codebase-Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#sites">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#github-organizations">GitHub Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#external-projects">External Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#history-and-more">History and more</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="developerIntro.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickStart.html">Quick Start</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Light Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-github-web-interface">Using the GitHub Web Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-and-deleting-branches">Creating and Deleting Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing">Editing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opening-a-pull-request">Opening a Pull Request</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-github-desktop-client">Using the GitHub Desktop Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up-the-client">Setting Up the Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloning-your-repository">Cloning Your Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-a-branch">Creating a Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#making-changes-and-committing">Making Changes and Committing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opening-pull-requests">Opening Pull Requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fullWorkspace.html">Full Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fullWorkspace.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fullWorkspace.html#run-game-from-source">Run game from source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fullWorkspace.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fullWorkspace.html#eclipse">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fullWorkspace.html#git">Git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usingIrc.html">Using IRC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usingIrc.html#irc-user-setup">IRC User Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usingIrc.html#gooey">Gooey</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commonIssues.html">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#game">Game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#java">Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#arch-gentoo-random-problems">Arch/Gentoo random problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/concepts.html">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/blockWorld.html">Block World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#entities-and-components">Entities and Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#component-systems">Component Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#events">Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/assetSystem.html">Asset System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/assetSystem.html#prefabs">Prefabs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#structure-of-modules">Structure of Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#module-txt">module.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#namespace">Namespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#guides">Guides</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/multiplayer.html">Networking and Multiplayer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing/developing.html">Developer Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing/blocks/blocks.html">Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockDefinition.html">Block Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/accessingBlocks.html">Accessing Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockAttributes.html">Block Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#inheritance">Inheritance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#informational">Informational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#core-behavioural">Core behavioural</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#tiles">Tiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#rendering-options">Rendering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#color-lookup-tables">Color Lookup Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#shapes-and-rotation">Shapes and Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#collisions">Collisions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#entity-system-integration">Entity System Integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#inventory-settings">Inventory Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#categories">Categories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockShapes.html">Shapes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#block-shape-basics">Block Shape Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#shape-parts">Shape Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#colliders">Colliders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#shape-example">Shape Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html">Block Shapes In Blender</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#block-shape-addon-installation">Block Shape Addon Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#tips-when-creating-a-shape">Tips When Creating A Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#terasology-exporter-addon-properties">Terasology Exporter Addon Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#block-shape-video-tutorial">Block Shape Video Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockFamilies.html">Block Families</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/entitySystem/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/events.html">Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#defining-events">Defining events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#sending-events">Sending events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#processing-events">Processing events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#consumable-events">Consumable events</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html">Dependency Injection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#inject-an-instance">Inject an Instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#share-a-class">Share a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#how-it-works">How it works</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/commands.html">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#command-structure">Command structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#annotation-and-command-name">Annotation and Command Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#short-descriptions-and-help-text">Short Descriptions and Help Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#displaying-text">Displaying Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#commands-and-multiplayer">Commands and Multiplayer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/modules/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#terasology-s-git-setup">Terasology’s Git Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#fetching-existing-modules">Fetching existing Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#create-a-new-module">Create a new Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#dependency-resolution">Dependency Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#modding-api-sandboxing">Modding API &amp; Sandboxing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/networkMultiplayer/networkMultiplayer.html">Networking and Multiplayer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html">Entities, Components on the Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html#replicate-annotation">Replicate annotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html#network-component">Network Component</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html">Network Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#serverevent">ServerEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#broadcastevent">BroadcastEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#ownerevent">OwnerEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/input.html">User Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#define-bindings">Define Bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#input-categories">Input Categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#handling-input-events">Handling Input Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/translation.html">Translation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/translation.html#internationalization-i18n">Internationalization / i18n</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/translation.html#localization-l10n">Localization / l10n</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/translation.html#using-weblate">Using Weblate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/translation.html#manual-translation">Manual Translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../workflow/workflow.html">Conventions and Workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#updating-a-fork">Updating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#creating-a-pull-request">Creating a Pull Request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#direct-write-access">Direct Write Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/versioning.html">Versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/versioning.html#snapshots">Snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/versioning.html#making-a-release">Making a Release</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/documentationJavaDoc.html">Documentation (JavaDoc)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#general-formatting">General Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#first-sentence">First Sentence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#html-tags">HTML Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#block-tags">Block Tags</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#code-and-link">&#64;code and &#64;link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#param-return-and-throws">&#64;param, &#64;return, and &#64;throws</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#author">&#64;author</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#what-to-document">What to Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#public-and-protected">Public and Protected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#null-tolerance-pre-and-postconditions">null-tolerance, Pre- and Postconditions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#generate-html-javadoc">Generate HTML JavaDoc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/documentationExternal.html">Documentation (External)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationExternal.html#sphinx-documentation">Sphinx Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#headlines">Headlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#javadoc-links">JavaDoc Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#external-links">External Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#code-snippets">Code Snippets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/unitTests.html">Unit Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#why-tests">Why Tests?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#testing-libraries">Testing Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#guidelines-for-tests">Guidelines for Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#game-environment-tests">Game Environment Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../playing/playing.html">Playing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../playing/controls.html">Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playing/console.html">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playing/serverHosting.html">Server Hosting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://oniatus.github.io/javadoc/index.html">JavaDoc (External)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Terasology</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developerIntro.html">Getting Started</a> &raquo;</li>
+        
+      <li>Light Workspace Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developerIntro/lightWorkspace.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="light-workspace-setup">
+<span id="id1"></span><h1>Light Workspace Setup<a class="headerlink" href="#light-workspace-setup" title="Permalink to this headline">¶</a></h1>
+<p>Every day, bit by bit, Terasology is growing. From the smallest of jobs like adding readmes to slightly larger jobs like adding code, people from all around the world wish to contribute to the project. However, for many the process is far more complex than required. For instance, one doesn’t need to clone a complete Git-linked repository to one’s system just to edit a readme. This guide will guide you through setting up a light environment so that you can do these relatively small tasks without much tedium.</p>
+<div class="section" id="using-the-github-web-interface">
+<h2>Using the GitHub Web Interface<a class="headerlink" href="#using-the-github-web-interface" title="Permalink to this headline">¶</a></h2>
+<p>GitHub’s web interface is great for tasks involving small edits to code or edits to text files (like readmes) or wikis. It allows the user to edit and commit right from the browser window.</p>
+<div class="section" id="creating-a-fork">
+<h3>Creating a Fork<a class="headerlink" href="#creating-a-fork" title="Permalink to this headline">¶</a></h3>
+<p>To create a fork of Terasology, visit <a class="reference external" href="https://github.com/MovingBlocks/Terasology">Terasology’s GitHub repository</a> and click the “Fork” button near the top right corner of the screen. This will create a fork of the repository in your GitHub account.</p>
+<img alt="../_images/Fork.png" src="../_images/Fork.png" />
+</div>
+<div class="section" id="creating-and-deleting-branches">
+<h3>Creating and Deleting Branches<a class="headerlink" href="#creating-and-deleting-branches" title="Permalink to this headline">¶</a></h3>
+<p>Since you are going to be making changes, it might be a good idea to create a branch before. You can create a branch by clicking on the repository’s branch selector and typing in the name of the branch. If the branch doesn’t exist, GitHub will offer to create it for you.</p>
+<p>You can go to the <strong>Branches</strong> page of your repository by clicking on the number of branches displayed on the home page of the repository. This will take you to an overview of all your branches. From here, you can delete branches by clicking the little red trash can icons.</p>
+<img alt="../_images/Branch1.png" src="../_images/Branch1.png" />
+<img alt="../_images/Branch2.png" src="../_images/Branch2.png" />
+</div>
+<div class="section" id="editing">
+<h3>Editing<a class="headerlink" href="#editing" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="creating-a-file">
+<h4>Creating a File<a class="headerlink" href="#creating-a-file" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Navigate to the main page of your repository.</li>
+<li>Browse to the folder where you want to create a file.</li>
+<li>Click the <strong>Create new file</strong> button above the file list.</li>
+<li>Type the name and extension of the file you want to create in the name field. You may also create subdirectories here by using the <code class="docutils literal"><span class="pre">/</span></code> directory separator.</li>
+<li>Add contents to the file in the <strong>Edit new file</strong> tab. You may preview your file while editing using the <strong>Preview</strong> tab.</li>
+<li>At the bottom of the page, type a commit message, choose the branch you want to commit to, and then click the <strong>Commit New File</strong> button.</li>
+</ol>
+<img alt="../_images/Create.png" src="../_images/Create.png" />
+</div>
+<div class="section" id="editing-renaming-or-moving-files">
+<h4>Editing, Renaming or Moving Files<a class="headerlink" href="#editing-renaming-or-moving-files" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Browse to the file you want to make changes to.</li>
+<li>In the upper right hand corner, click the little pencil icon to open the editor.</li>
+<li>You can change the name of the file at the top of the page. You can also move the file by using the <code class="docutils literal"><span class="pre">/</span></code> separator to make/access subdirectories (use <code class="docutils literal"><span class="pre">..</span></code> to go to the parent directory).</li>
+<li>Make the changes you want to make in the <strong>Edit</strong> tab. You may preview the changes using the <strong>Preview</strong> tab.</li>
+<li>Scroll to the bottom of the page, type a commit message, choose the branch you want to commit to, and click the <strong>Commit Changes</strong> button.</li>
+</ol>
+<img alt="../_images/Edit1.png" src="../_images/Edit1.png" />
+<img alt="../_images/Edit2.png" src="../_images/Edit2.png" />
+</div>
+<div class="section" id="deleting-files">
+<h4>Deleting files<a class="headerlink" href="#deleting-files" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Browse to the file you want to delete.</li>
+<li>At the top of the file, click the little trashcan icon.</li>
+<li>Scroll to the bottom of the page, type a commit message, choose a branch, and commit.</li>
+</ol>
+<img alt="../_images/Delete.png" src="../_images/Delete.png" />
+</div>
+</div>
+<div class="section" id="opening-a-pull-request">
+<h3>Opening a Pull Request<a class="headerlink" href="#opening-a-pull-request" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Navigate to the home page of your repository.</li>
+<li>Press the <strong>Pull Request</strong> button at the top of the page.</li>
+<li>Give a title and description to the pull request.</li>
+<li>Press the <strong>Create a pull request</strong> button.</li>
+</ol>
+<img alt="../_images/PR.png" src="../_images/PR.png" />
+</div>
+</div>
+<div class="section" id="using-the-github-desktop-client">
+<h2>Using the GitHub Desktop Client<a class="headerlink" href="#using-the-github-desktop-client" title="Permalink to this headline">¶</a></h2>
+<p>For many changes, especially more elaborate ones, you may prefer downloading the repository on your system, making changes, testing them and then committing them. This can be achieved by various means, the most popular of which is git’s command-line interface. However, this may be daunting for many users, especially beginners. This is where GitHub’s desktop client comes in. The GitHub desktop client is an easy way to clone and edit repositories on your system. Here are a few tips to help you get started.</p>
+<p>Note that to access your environment via the desktop client, you first need to fork the <a class="reference external" href="https://github.com/MovingBlocks/Terasology">Terasology repository</a> using the process mentioned before in this document.</p>
+<div class="section" id="setting-up-the-client">
+<h3>Setting Up the Client<a class="headerlink" href="#setting-up-the-client" title="Permalink to this headline">¶</a></h3>
+<p>The GitHub desktop client can be downloaded from <a class="reference external" href="https://desktop.github.com">the GitHub desktop home page</a>. The client is available for MacOS and for Windows. Sadly, there is no Linux client yet.
+On launching the client for the first time, you will be asked to enter your GitHub account username and password, after which you will be led through a short tutorial on the basics of using the client.</p>
+</div>
+<div class="section" id="cloning-your-repository">
+<h3>Cloning Your Repository<a class="headerlink" href="#cloning-your-repository" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Launch the client.</li>
+<li>Press the “+” dropdown in the top left corner.</li>
+<li>Go to the <strong>Clone</strong> tab.</li>
+<li>Select the name of the forked repository from the list of all your repositories.</li>
+</ol>
+<img alt="../_images/Clone.png" src="../_images/Clone.png" />
+</div>
+<div class="section" id="creating-a-branch">
+<h3>Creating a Branch<a class="headerlink" href="#creating-a-branch" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click on the create branch icon.</li>
+<li>Type in a name and select the original branch from which to branch off.</li>
+<li>Press the <strong>Create Branch</strong> button.</li>
+</ol>
+<img alt="../_images/Branch.png" src="../_images/Branch.png" />
+</div>
+<div class="section" id="making-changes-and-committing">
+<h3>Making Changes and Committing<a class="headerlink" href="#making-changes-and-committing" title="Permalink to this headline">¶</a></h3>
+<p>Sadly, the desktop client doesn’t support making changes or browsing the repo. You will need to browse the repo and make changes using the operating system’s file explorer and appropriate editing tools on your system. To commit, simply select the repository in the tray on the left hand side, select which files to commit, type a commit message and description and press the <strong>Commit</strong> button. You can push committed changes by pressing <code class="docutils literal"><span class="pre">Control+P</span></code> (<code class="docutils literal"><span class="pre">Cmd+P</span></code> on Mac) or by using the <strong>Publish</strong> button at the top right corner of the screen. You can also use the toolbar item at Repository -&gt; Push.</p>
+</div>
+<div class="section" id="opening-pull-requests">
+<h3>Opening Pull Requests<a class="headerlink" href="#opening-pull-requests" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select your repository in the tray at the left.</li>
+<li>Press the <strong>Pull Request</strong> button in the top right corner.</li>
+<li>Provide a title and description.</li>
+<li>Press <strong>Send Pull Request</strong>.</li>
+</ol>
+<img alt="../_images/PR_desktop.png" src="../_images/PR_desktop.png" />
+<p>– written by Mandar Juvekar</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="fullWorkspace.html" class="btn btn-neutral float-right" title="Full Workspace Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickStart.html" class="btn btn-neutral" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terasology.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

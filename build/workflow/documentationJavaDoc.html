@@ -1,0 +1,615 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Documentation (JavaDoc) &mdash; Terasology  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Terasology  documentation" href="../index.html"/>
+        <link rel="up" title="Conventions and Workflow" href="workflow.html"/>
+        <link rel="next" title="Documentation (External)" href="documentationExternal.html"/>
+        <link rel="prev" title="Versioning" href="versioning.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Terasology
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../projectOverview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#codebase-structure">Codebase-Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#sites">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#github-organizations">GitHub Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#external-projects">External Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#history-and-more">History and more</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developerIntro/developerIntro.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developerIntro/quickStart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developerIntro/lightWorkspace.html">Light Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/lightWorkspace.html#using-the-github-web-interface">Using the GitHub Web Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#creating-and-deleting-branches">Creating and Deleting Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#editing">Editing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#opening-a-pull-request">Opening a Pull Request</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/lightWorkspace.html#using-the-github-desktop-client">Using the GitHub Desktop Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#setting-up-the-client">Setting Up the Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#cloning-your-repository">Cloning Your Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#creating-a-branch">Creating a Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#making-changes-and-committing">Making Changes and Committing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developerIntro/lightWorkspace.html#opening-pull-requests">Opening Pull Requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developerIntro/fullWorkspace.html">Full Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/fullWorkspace.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/fullWorkspace.html#run-game-from-source">Run game from source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/fullWorkspace.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/fullWorkspace.html#eclipse">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/fullWorkspace.html#git">Git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developerIntro/usingIrc.html">Using IRC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/usingIrc.html#irc-user-setup">IRC User Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/usingIrc.html#gooey">Gooey</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developerIntro/commonIssues.html">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/commonIssues.html#game">Game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/commonIssues.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/commonIssues.html#java">Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/commonIssues.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developerIntro/commonIssues.html#arch-gentoo-random-problems">Arch/Gentoo random problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/concepts.html">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/blockWorld.html">Block World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#entities-and-components">Entities and Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#component-systems">Component Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#events">Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/assetSystem.html">Asset System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/assetSystem.html#prefabs">Prefabs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#structure-of-modules">Structure of Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#module-txt">module.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#namespace">Namespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#guides">Guides</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/multiplayer.html">Networking and Multiplayer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing/developing.html">Developer Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing/blocks/blocks.html">Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockDefinition.html">Block Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/accessingBlocks.html">Accessing Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockAttributes.html">Block Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#inheritance">Inheritance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#informational">Informational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#core-behavioural">Core behavioural</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#tiles">Tiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#rendering-options">Rendering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#color-lookup-tables">Color Lookup Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#shapes-and-rotation">Shapes and Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#collisions">Collisions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#entity-system-integration">Entity System Integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#inventory-settings">Inventory Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#categories">Categories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockShapes.html">Shapes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#block-shape-basics">Block Shape Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#shape-parts">Shape Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#colliders">Colliders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#shape-example">Shape Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html">Block Shapes In Blender</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#block-shape-addon-installation">Block Shape Addon Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#tips-when-creating-a-shape">Tips When Creating A Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#terasology-exporter-addon-properties">Terasology Exporter Addon Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#block-shape-video-tutorial">Block Shape Video Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockFamilies.html">Block Families</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/entitySystem/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/events.html">Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#defining-events">Defining events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#sending-events">Sending events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#processing-events">Processing events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#consumable-events">Consumable events</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html">Dependency Injection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#inject-an-instance">Inject an Instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#share-a-class">Share a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#how-it-works">How it works</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/commands.html">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#command-structure">Command structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#annotation-and-command-name">Annotation and Command Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#short-descriptions-and-help-text">Short Descriptions and Help Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#displaying-text">Displaying Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#commands-and-multiplayer">Commands and Multiplayer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/modules/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#terasology-s-git-setup">Terasology’s Git Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#fetching-existing-modules">Fetching existing Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#create-a-new-module">Create a new Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#dependency-resolution">Dependency Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#modding-api-sandboxing">Modding API &amp; Sandboxing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/networkMultiplayer/networkMultiplayer.html">Networking and Multiplayer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html">Entities, Components on the Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html#replicate-annotation">Replicate annotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html#network-component">Network Component</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html">Network Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#serverevent">ServerEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#broadcastevent">BroadcastEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#ownerevent">OwnerEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/input.html">User Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#define-bindings">Define Bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#input-categories">Input Categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#handling-input-events">Handling Input Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/translation.html">Translation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/translation.html#internationalization-i18n">Internationalization / i18n</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/translation.html#localization-l10n">Localization / l10n</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/translation.html#using-weblate">Using Weblate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/translation.html#manual-translation">Manual Translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="workflow.html">Conventions and Workflow</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#updating-a-fork">Updating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#creating-a-pull-request">Creating a Pull Request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#direct-write-access">Direct Write Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="versioning.html">Versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="versioning.html#snapshots">Snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="versioning.html#making-a-release">Making a Release</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Documentation (JavaDoc)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-formatting">General Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#first-sentence">First Sentence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#html-tags">HTML Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#block-tags">Block Tags</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#code-and-link">&#64;code and &#64;link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#param-return-and-throws">&#64;param, &#64;return, and &#64;throws</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#author">&#64;author</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#what-to-document">What to Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#public-and-protected">Public and Protected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#null-tolerance-pre-and-postconditions">null-tolerance, Pre- and Postconditions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#generate-html-javadoc">Generate HTML JavaDoc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="documentationExternal.html">Documentation (External)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="documentationExternal.html#sphinx-documentation">Sphinx Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="documentationExternal.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="documentationExternal.html#headlines">Headlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="documentationExternal.html#javadoc-links">JavaDoc Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="documentationExternal.html#external-links">External Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="documentationExternal.html#code-snippets">Code Snippets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unitTests.html">Unit Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unitTests.html#why-tests">Why Tests?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unitTests.html#testing-libraries">Testing Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unitTests.html#guidelines-for-tests">Guidelines for Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unitTests.html#game-environment-tests">Game Environment Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../playing/playing.html">Playing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../playing/controls.html">Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playing/console.html">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playing/serverHosting.html">Server Hosting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://oniatus.github.io/javadoc/index.html">JavaDoc (External)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Terasology</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="workflow.html">Conventions and Workflow</a> &raquo;</li>
+        
+      <li>Documentation (JavaDoc)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/workflow/documentationJavaDoc.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="documentation-javadoc">
+<h1>Documentation (JavaDoc)<a class="headerlink" href="#documentation-javadoc" title="Permalink to this headline">¶</a></h1>
+<p>Our Javadoc guidelines are loosely based on <a class="reference external" href="http://blog.joda.org/2012/11/javadoc-coding-standards.html">Stephen Colebourne’s blog article on Javadoc coding standards</a>
+and <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html">Oracle’s guide on writing Javadoc</a>.
+Note that these guidelines merely specify the layout and formatting of the documentation but not its content.</p>
+<div class="section" id="general-formatting">
+<h2>General Formatting<a class="headerlink" href="#general-formatting" title="Permalink to this headline">¶</a></h2>
+<p>A Javadoc comment is written in HTML and can therefore use common HTML tags.
+A JavaDoc comment is made up of two parts, the description followed by block tags.
+Keep in mind that Javadoc is often read in it’s source form, so it should be easy to read and understand without the generated web frontend.</p>
+</div>
+<div class="section" id="first-sentence">
+<h2>First Sentence<a class="headerlink" href="#first-sentence" title="Permalink to this headline">¶</a></h2>
+<p>Write the first sentence as a short summary of the method,
+as Javadoc automatically places it in the method summary table (and index).
+This first sentence, typically ended by a dot, is used in the next-level higher Javadoc.
+As such, it has the responsibility of summing up the method or class to readers scanning the class or package.
+To achieve this, the first sentence should be clear and punchy, and generally short.</p>
+<p>While not required, it is recommended that the first sentence is a paragraph to itself.
+This helps retain the punchiness for readers of the source code.</p>
+<p>It is recommended to use the third person form at the start.
+For example, “Gets the foo”, “Sets the “bar” or “Consumes the baz”.
+Avoid the second person form, such as “Get the foo”.</p>
+</div>
+<div class="section" id="html-tags">
+<h2>HTML Tags<a class="headerlink" href="#html-tags" title="Permalink to this headline">¶</a></h2>
+<p>As a rule-of-thumb use the <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#format">standard format for doc comments</a> with plain HTML tags (no XHTML).
+For longer doc comments use <code class="code docutils literal"><span class="pre">&lt;p&gt;</span></code> to separate different paragraphs.
+Note that you are not allowed to use self-closing tags, e.g., <code class="code docutils literal"><span class="pre">&lt;/p&gt;</span></code>.
+Place a single <code class="code docutils literal"><span class="pre">&lt;p&gt;</span></code> tag on the blank line between paragraphs:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * First paragraph.</span>
+<span class="cm"> * &lt;p&gt;</span>
+<span class="cm"> * Second paragraph.</span>
+<span class="cm"> * May be on multiple lines.</span>
+<span class="cm"> * &lt;p&gt;</span>
+<span class="cm"> * Third paragraph.</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>Lists are useful in Javadoc when explaining a set of options, choices or issues.
+These standards place a single <code class="code docutils literal"><span class="pre">&lt;li&gt;</span></code> tag at the start of the line and no closing tag.
+In order to get correct paragraph formatting, extra paragraph tags are required:</p>
+</div>
+<div class="section" id="block-tags">
+<h2>Block Tags<a class="headerlink" href="#block-tags" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="code-and-link">
+<h3>&#64;code and &#64;link<a class="headerlink" href="#code-and-link" title="Permalink to this headline">¶</a></h3>
+<p>Many Javadoc descriptions reference other methods and classes.
+This can be achieved most effectively using the &#64;link and &#64;code features.</p>
+<p>The &#64;link feature creates a visible hyperlink in generated Javadoc to the target.
+The &#64;link target is one of the following forms:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * First paragraph.</span>
+<span class="cm"> * &lt;p&gt;</span>
+<span class="cm"> * Link to a class named &#39;Foo&#39;: {@link Foo}.</span>
+<span class="cm"> * Link to a method &#39;bar&#39; on a class named &#39;Foo&#39;: {@link Foo#bar}.</span>
+<span class="cm"> * Link to a method &#39;baz&#39; on this class: {@link #baz}.</span>
+<span class="cm"> * Link specifying text of the hyperlink after a space: {@link Foo the Foo class}.</span>
+<span class="cm"> * Link to a method handling method overload {@link Foo#bar(String,int)}.</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>The &#64;code feature provides a section of fixed-width font, ideal for references to methods and class names.
+While &#64;link references are checked by the Javadoc compiler, &#64;code references are not.</p>
+<p>Only use &#64;link on the first reference to a specific class or method.
+Use &#64;code for subsequent references.
+This avoids excessive hyperlinks cluttering up the Javadoc.</p>
+<p>Do not use &#64;link in the punch line.
+The first sentence is used in the higher level Javadoc.
+Adding a hyperlink in that first sentence makes the higher level documentation more confusing.
+Always use &#64;code in the first sentence if necessary. &#64;link can be used from the second sentence/paragraph onwards.</p>
+<p>Do not use &#64;code for null, true or false. The concepts of null, true and false are very common in Javadoc.
+Adding &#64;code for every occurrence is a burden to both the reader and writer of the Javadoc and adds no real value.</p>
+</div>
+<div class="section" id="param-return-and-throws">
+<h3>&#64;param, &#64;return, and &#64;throws<a class="headerlink" href="#param-return-and-throws" title="Permalink to this headline">¶</a></h3>
+<p>Almost all methods take in a parameter, return a result or both.
+The &#64;param and &#64;return features specify those inputs and outputs.
+The &#64;throws feature specifies the thrown exceptions.
+The &#64;param entries should be specified in the same order as the parameters.
+The &#64;return should be after the &#64;param entries, followed by &#64;throws.</p>
+<p>Use &#64;param for generics. If a class or method has generic type parameters, then these should be documented.
+The correct approach is an &#64;param tag with the parameter name of where T is the type parameter name.</p>
+<p>Use one blank line before &#64;param.
+There should be one blank line between the Javadoc text and the first &#64;param or &#64;return.
+This aids readability in source code.</p>
+<p>The &#64;param and &#64;return should be treated as phrases rather than complete sentences.
+They should start with a lower case letter, typically using the word “the”.
+They should not end with a dot. This aids readability in source code and when generated.</p>
+<p>Treat &#64;throws as an if clause.
+The &#64;throws feature should normally be followed by “if” and the rest of the phrase describing the condition.
+For example, “&#64;throws if the file could not be found”. This aids readability in source code and when generated.</p>
+</div>
+<div class="section" id="author">
+<h3>&#64;author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h3>
+<p>By convention we avoid the &#64;author tag. It’ll generally go out of date, and can promote code ownership by an individual.
+The version control system is in a much better position to record authors.</p>
+</div>
+</div>
+<div class="section" id="what-to-document">
+<h2>What to Document<a class="headerlink" href="#what-to-document" title="Permalink to this headline">¶</a></h2>
+<p>As the documentation is intended to be used by other developers, it is important to document <em>what</em> a piece of code does.
+Everyone can read the code and understand <em>how</em> it works but it should not be necessary to read 5-15 lines only to understand the basic usage of a method.
+Therefore, everything which is not intuitive by the name of the method and parameters should be documented.</p>
+<div class="section" id="public-and-protected">
+<h3>Public and Protected<a class="headerlink" href="#public-and-protected" title="Permalink to this headline">¶</a></h3>
+<p>All public and protected methods should be fully defined with Javadoc.
+Especially complex methods, procedures with side-effects, and non-trivial operations should be documented well.
+Package and private methods do not have to be, but may benefit from it.
+Trivial getters and setters can be omitted.</p>
+</div>
+<div class="section" id="null-tolerance-pre-and-postconditions">
+<h3>null-tolerance, Pre- and Postconditions<a class="headerlink" href="#null-tolerance-pre-and-postconditions" title="Permalink to this headline">¶</a></h3>
+<p>Whether a method accepts null on input, or can return null is critical information for building large systems.
+All non-primitive methods should define their null-tolerance in the &#64;param or &#64;return. Some standard forms expressing this should be used wherever possible:</p>
+<ul class="simple">
+<li>“not null” means that null is not accepted and passing in null will probably throw an exception, typically NullPointerException.</li>
+<li>“may be null” means that null may be passed in. In general the behaviour of the passed in null should be defined.</li>
+<li>“null treated as xxx” means that a null input is equivalent to the specified value.</li>
+<li>“null returns xxx” means that a null input always returns the specified value.</li>
+</ul>
+<p>When defined in this way, there should not be an &#64;throws for NullPointerException.</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Javadoc text.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param foo  the foo parameter, not null</span>
+<span class="cm"> * @param bar  the bar parameter, null returns null</span>
+<span class="cm"> * @return the baz content, null if not processed</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">process</span><span class="o">(</span><span class="n">String</span> <span class="n">foo</span><span class="o">,</span> <span class="n">String</span> <span class="n">bar</span><span class="o">)</span> <span class="o">{...}</span>
+</pre></div>
+</div>
+<p>While it may be tempting to define null-handling behavior in a single central location,
+such as the class or package Javadoc, this is far less useful for developers.
+The Javadoc at the method level appears in IDEs during normal coding,
+whereas class or package level Javadoc requires a separate “search and learn” step.</p>
+<p>Other simple constraints may be added as well if applicable, for example “not empty, not null”.
+Primitive values might specify their bounds, for example “from 1 to 5”, or “not negative”.</p>
+</div>
+</div>
+<div class="section" id="generate-html-javadoc">
+<h2>Generate HTML JavaDoc<a class="headerlink" href="#generate-html-javadoc" title="Permalink to this headline">¶</a></h2>
+<p>To generate the JavaDoc HTML-pages for the project simply execute <code class="code docutils literal"><span class="pre">gradle</span> <span class="pre">javadoc</span></code> at the root of the project.
+The actual <code class="code docutils literal"><span class="pre">build.gradle</span></code> doesn’t need to have any related scripting in it, the Javadoc Gradle plugin does it all!</p>
+<p>The rendered HTML for the engine project will be contained in <code class="code docutils literal"><span class="pre">engine/build/docs/javadoc</span></code> and respective <code class="code docutils literal"><span class="pre">modules/&lt;module&gt;/build/docs/javadoc</span></code> for modules..</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="documentationExternal.html" class="btn btn-neutral float-right" title="Documentation (External)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="versioning.html" class="btn btn-neutral" title="Versioning" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terasology.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

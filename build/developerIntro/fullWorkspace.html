@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Full Workspace Setup &mdash; Terasology  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Terasology  documentation" href="../index.html"/>
+        <link rel="up" title="Getting Started" href="developerIntro.html"/>
+        <link rel="next" title="Using IRC" href="usingIrc.html"/>
+        <link rel="prev" title="Light Workspace Setup" href="lightWorkspace.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Terasology
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../projectOverview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#codebase-structure">Codebase-Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#sites">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#github-organizations">GitHub Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#external-projects">External Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectOverview.html#history-and-more">History and more</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="developerIntro.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickStart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lightWorkspace.html">Light Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lightWorkspace.html#using-the-github-web-interface">Using the GitHub Web Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#creating-and-deleting-branches">Creating and Deleting Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#editing">Editing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#opening-a-pull-request">Opening a Pull Request</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lightWorkspace.html#using-the-github-desktop-client">Using the GitHub Desktop Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#setting-up-the-client">Setting Up the Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#cloning-your-repository">Cloning Your Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#creating-a-branch">Creating a Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#making-changes-and-committing">Making Changes and Committing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lightWorkspace.html#opening-pull-requests">Opening Pull Requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Full Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-game-from-source">Run game from source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eclipse">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git">Git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usingIrc.html">Using IRC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usingIrc.html#irc-user-setup">IRC User Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usingIrc.html#gooey">Gooey</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commonIssues.html">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#game">Game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#java">Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commonIssues.html#arch-gentoo-random-problems">Arch/Gentoo random problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/concepts.html">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/blockWorld.html">Block World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#entities-and-components">Entities and Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#component-systems">Component Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/entitySystem.html#events">Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/assetSystem.html">Asset System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/assetSystem.html#prefabs">Prefabs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#structure-of-modules">Structure of Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#module-txt">module.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#namespace">Namespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../concepts/modules.html#guides">Guides</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../concepts/multiplayer.html">Networking and Multiplayer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing/developing.html">Developer Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing/blocks/blocks.html">Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockDefinition.html">Block Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/accessingBlocks.html">Accessing Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockAttributes.html">Block Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#inheritance">Inheritance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#informational">Informational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#core-behavioural">Core behavioural</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#tiles">Tiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#rendering-options">Rendering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#color-lookup-tables">Color Lookup Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#shapes-and-rotation">Shapes and Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#collisions">Collisions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#entity-system-integration">Entity System Integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#inventory-settings">Inventory Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockAttributes.html#categories">Categories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockShapes.html">Shapes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#block-shape-basics">Block Shape Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#shape-parts">Shape Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#colliders">Colliders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapes.html#shape-example">Shape Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html">Block Shapes In Blender</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#block-shape-addon-installation">Block Shape Addon Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#tips-when-creating-a-shape">Tips When Creating A Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#terasology-exporter-addon-properties">Terasology Exporter Addon Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/blocks/blockShapesInBlender.html#block-shape-video-tutorial">Block Shape Video Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/blocks/blockFamilies.html">Block Families</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/entitySystem/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/events.html">Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#defining-events">Defining events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#sending-events">Sending events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#processing-events">Processing events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/events.html#consumable-events">Consumable events</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html">Dependency Injection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#inject-an-instance">Inject an Instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#share-a-class">Share a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/dependencyInjection.html#how-it-works">How it works</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/entitySystem/commands.html">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#command-structure">Command structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#annotation-and-command-name">Annotation and Command Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#short-descriptions-and-help-text">Short Descriptions and Help Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#displaying-text">Displaying Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/entitySystem/commands.html#commands-and-multiplayer">Commands and Multiplayer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/modules/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#terasology-s-git-setup">Terasology’s Git Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#fetching-existing-modules">Fetching existing Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#create-a-new-module">Create a new Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#dependency-resolution">Dependency Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/modules/modules.html#modding-api-sandboxing">Modding API &amp; Sandboxing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/networkMultiplayer/networkMultiplayer.html">Networking and Multiplayer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html">Entities, Components on the Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html#replicate-annotation">Replicate annotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEntity.html#network-component">Network Component</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html">Network Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#serverevent">ServerEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#broadcastevent">BroadcastEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/networkMultiplayer/networkEvents.html#ownerevent">OwnerEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/input.html">User Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#define-bindings">Define Bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#input-categories">Input Categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/input.html#handling-input-events">Handling Input Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developing/translation.html">Translation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developing/translation.html#internationalization-i18n">Internationalization / i18n</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developing/translation.html#localization-l10n">Localization / l10n</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../developing/translation.html#using-weblate">Using Weblate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../developing/translation.html#manual-translation">Manual Translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../workflow/workflow.html">Conventions and Workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#updating-a-fork">Updating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#creating-a-pull-request">Creating a Pull Request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/contributing.html#direct-write-access">Direct Write Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/versioning.html">Versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/versioning.html#snapshots">Snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/versioning.html#making-a-release">Making a Release</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/documentationJavaDoc.html">Documentation (JavaDoc)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#general-formatting">General Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#first-sentence">First Sentence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#html-tags">HTML Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#block-tags">Block Tags</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#code-and-link">&#64;code and &#64;link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#param-return-and-throws">&#64;param, &#64;return, and &#64;throws</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#author">&#64;author</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#what-to-document">What to Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#public-and-protected">Public and Protected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationJavaDoc.html#null-tolerance-pre-and-postconditions">null-tolerance, Pre- and Postconditions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationJavaDoc.html#generate-html-javadoc">Generate HTML JavaDoc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/documentationExternal.html">Documentation (External)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/documentationExternal.html#sphinx-documentation">Sphinx Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#headlines">Headlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#javadoc-links">JavaDoc Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#external-links">External Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../workflow/documentationExternal.html#code-snippets">Code Snippets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/unitTests.html">Unit Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#why-tests">Why Tests?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#testing-libraries">Testing Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#guidelines-for-tests">Guidelines for Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflow/unitTests.html#game-environment-tests">Game Environment Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../playing/playing.html">Playing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../playing/controls.html">Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playing/console.html">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../playing/serverHosting.html">Server Hosting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://oniatus.github.io/javadoc/index.html">JavaDoc (External)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Terasology</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developerIntro.html">Getting Started</a> &raquo;</li>
+        
+      <li>Full Workspace Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developerIntro/fullWorkspace.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="full-workspace-setup">
+<h1>Full Workspace Setup<a class="headerlink" href="#full-workspace-setup" title="Permalink to this headline">¶</a></h1>
+<p>The engine repository at <a class="reference external" href="https://github.com/MovingBlocks/Terasology">https://github.com/MovingBlocks/Terasology</a> is the heart and central workspace of mostly everything Terasology.</p>
+<p>To set up the workspace is a fairly easy process:</p>
+<ul class="simple">
+<li>Git clone or download a source zip from GitHub to some location on your computer
+* See GitHub or Google for various Git tutorials. In short you’d clone with <code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/MovingBlocks/Terasology.git</span></code> into a local workspace directory</li>
+<li>Run <code class="docutils literal"><span class="pre">gradlew</span></code> once in the root of the chosen directory via command prompt / terminal</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In OSX, the command is <code class="docutils literal"><span class="pre">./gradlew</span></code> instand of <code class="docutils literal"><span class="pre">gradlew</span></code></p>
+</div>
+<p>That’s it, really! You now should have a functioning game workspace.</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>Okay, you might want a little more than that. The only mandatory requirement is a Java 8 SDK which you either download from <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Oracle</a> or get via <a class="reference external" href="http://openjdk.java.net">OpenJDK</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Using OpenJDK has a slightly higher risk for encountering <a class="reference internal" href="commonIssues.html#common-issues"><span class="std std-ref">Common Issues</span></a> - for instance the <a class="reference external" href="https://github.com/MovingBlocks/TerasologyLauncher">Launcher</a> requires JavaFX which isn’t always bundled with OpenJDK.</p>
+</div>
+<p>Beyond that you might want an IDE and some IDE plugins, see <a class="reference internal" href="#ide-intellij"><span class="std std-ref">Setup in IntelliJ</span></a> or <a class="reference internal" href="#ide-eclipse"><span class="std std-ref">Setup in Eclipse</span></a>. Maybe even a tool like <a class="reference external" href="https://www.yourkit.com">YourKit</a> to help profile game performance. But everything else really is optional!</p>
+<p>Most our automation and project setup happens through <a class="reference external" href="http://gradle.org">Gradle</a> which the <code class="docutils literal"><span class="pre">gradlew</span></code> script downloads a version of if needed. The initial <code class="docutils literal"><span class="pre">gradlew</span></code> execution will download all project dependencies (Maven style - downloading half the internet). Just give it a while. Read more on <a class="reference internal" href="../projectOverview.html#codebase-structure"><span class="std std-ref">Codebase Structure</span></a> if interested.</p>
+</div>
+<div class="section" id="run-game-from-source">
+<h2>Run game from source<a class="headerlink" href="#run-game-from-source" title="Permalink to this headline">¶</a></h2>
+<p>As long as you have the code and Java 8 you can run the game from source simply with <code class="docutils literal"><span class="pre">gradlew</span> <span class="pre">game</span></code></p>
+<p>Any problem encountered at this point is usually from Java not being configured right, such as having an older version as your default Java. See <a class="reference internal" href="commonIssues.html#common-issues"><span class="std std-ref">Common Issues</span></a> for more.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If the game itself behaves funny or crashes see if the <a class="reference external" href="https://github.com/MovingBlocks/Terasology/releases">normal release download</a> works. If not check the <strong>Minimum Requirements</strong> <a class="footnote-reference" href="#id3" id="id1">[1]</a> and make sure your graphics card driver is up to date.</p>
+<p class="last">Ask in the <a class="reference external" href="http://forum.terasology.org/forum/support.20">Support Forum</a> if issues remain, or come join us on <code class="docutils literal"><span class="pre">#terasology</span></code> on Freenode IRC. See <a class="reference internal" href="usingIrc.html#using-irc"><span class="std std-ref">Using IRC</span></a> and please be patient :-) IRC isn’t necessarily instant communication and it may take a while to get a reply.</p>
+</div>
+<p>You can also run a headless server from source using <code class="docutils literal"><span class="pre">gradlew</span> <span class="pre">server</span></code> - just run it in a second command prompt / terminal as it’ll not accept further input (other than <code class="docutils literal"><span class="pre">CTRL-C</span></code> to break the process)</p>
+</div>
+<div class="section" id="intellij">
+<span id="ide-intellij"></span><h2>IntelliJ<a class="headerlink" href="#intellij" title="Permalink to this headline">¶</a></h2>
+<p>Running from command line is good and fine and some enjoy simply working in a plain text editor. For those preferring a full integrated development environment (IDE) we recommend <a class="reference external" href="https://www.jetbrains.com/idea/download">IntelliJ</a></p>
+<p>We have a series of customizations that prepare run configurations, Git integration, and so on for the project, specifically for IntelliJ. Eclipse has fewer of these but is still entirely usable, as is NetBeans, but you’ll need to figure out some details there yourself.</p>
+<p>To prepare project files for IntelliJ simply run <code class="docutils literal"><span class="pre">gradlew</span> <span class="pre">idea</span></code> which as any <code class="docutils literal"><span class="pre">gradlew</span></code> also does the initial dependency fetch so you can go straight from source download to <code class="docutils literal"><span class="pre">gradlew</span> <span class="pre">idea</span></code> you don’t need a separate plain <code class="docutils literal"><span class="pre">gradlew</span></code> step.</p>
+<p>Open the resulting <code class="docutils literal"><span class="pre">Terasology.ipr</span></code> as an existing project in IntelliJ</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Do <strong>not</strong> create a new project or attempt to import the project via Gradle. It is possible to get that working but it may miss customizations and cause confusion.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">After openning <code class="docutils literal"><span class="pre">Terasology.ipr</span></code>, IntelliJ will show: <strong>Unlinked Gradle project?</strong> <strong>Don’t</strong> click on <strong>Import Gradle project</strong></p>
+</div>
+<p>The opened project should leave you with a series of run configurations to execute the game (and server) in various formats. It’ll hook up our license header as a template, configure code analytics, and so on.</p>
+<p>Here is a video introducing downloading project from GitHub, runing the game from sources and openning the source with IntelliJ:</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/cCMQ5VaKnfw?feature=player_detailpage" frameborder="0" allowfullscreen="1">&nbsp;</iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="eclipse">
+<span id="ide-eclipse"></span><h2>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h2>
+<p>Eclipse can be used with Terasology just like IntelliJ, but needs a little more manual setup.</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">We have a few more files at <code class="docutils literal"><span class="pre">config/eclipse</span></code> that could use some setup instructions and/or automated customization like for IntelliJ.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>All of the settings described below can be applied to a specific Eclipse project or to an entire workspace.</p>
+<ul class="last simple">
+<li>To apply the settings on a per-project basis, right-click on a project in the <strong>Package Explorer</strong> and select <strong>Properties</strong>. (Alternatively, select the project and press Alt+Enter) After navigating to a relevant section of the Preferences menu, check <strong>Enable project-specific settings</strong>. Repeat this for all the projects you’d like to work on.</li>
+<li>To apply the settings globally, select <strong>Window → Preferences</strong> from the main menu and navigate to a relevant section.</li>
+</ul>
+</div>
+<ul class="simple">
+<li>Formatting Convention Setup: In <strong>Java Code Style → Formatter</strong>, click <strong>Import</strong> and import Terasology’s formatting settings file (<a class="reference external" href="https://github.com/MovingBlocks/Terasology/blob/develop/config/eclipse/formatting.xml">Terasology/config/eclipse/formatting.xml</a>). The <strong>Terasology formatting conventions</strong> profile should be automatically selected.</li>
+</ul>
+<img alt="../_images/EclipseFormatterSettings.png" src="../_images/EclipseFormatterSettings.png" />
+<ul class="simple">
+<li>Import Order Setup: In <strong>Java Code Style → Organize Imports</strong>, click Import and import Terasology’s import order file (<a class="reference external" href="https://github.com/MovingBlocks/Terasology/blob/develop/config/eclipse/.importorder">Terasology/config/eclipse/.importorder</a>).</li>
+</ul>
+<img alt="../_images/EclipseImports1.png" src="../_images/EclipseImports1.png" />
+<ul class="simple">
+<li><strong>Optional, but recommended</strong>: Switch to <strong>Window → Preferences → Editor → Save Actions</strong>. Check <strong>Perform the selected actions on save</strong> and <strong>Organize imports</strong>.</li>
+</ul>
+<img alt="../_images/EclipseImports2.png" src="../_images/EclipseImports2.png" />
+<p>Here is a video introducing setting up Terasology with Eclipse:</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/WMqGx9f28uM?feature=player_detailpage" frameborder="0" allowfullscreen="1">&nbsp;</iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="git">
+<h2>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
+<p>Git will be enabled as source control, however going deeper into the details of using Git is outside the scope of this wiki. Please <a class="reference external" href="https://help.github.com/articles/good-resources-for-learning-git-and-github">see the excellent resources on GitHub for more</a> like their <a class="reference external" href="https://help.github.com/categories/bootcamp">bootcamp</a> series.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><a class="reference internal" href="../concepts/modules.html#concept-modules"><span class="std std-ref">Module concept</span></a> and <a class="reference internal" href="../developing/modules/modules.html#developing-modules"><span class="std std-ref">Developing modules</span></a> - if the engine is the heart of Terasology modules make up everything else. Learn about them here.</li>
+<li><a class="reference internal" href="../workflow/contributing.html#contributing"><span class="std std-ref">Contributing</span></a> - understand how to work on the GitHub (fork code repositories on GitHub,interact with several at once, etc).</li>
+</ul>
+</div>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>TODO: <a class="reference external" href="https://github.com/MovingBlocks/Terasology/issues/1123">https://github.com/MovingBlocks/Terasology/issues/1123</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="usingIrc.html" class="btn btn-neutral float-right" title="Using IRC" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lightWorkspace.html" class="btn btn-neutral" title="Light Workspace Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terasology.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Entities, Components on the Network &mdash; Terasology  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Terasology  documentation" href="../../index.html"/>
+        <link rel="up" title="Networking and Multiplayer" href="networkMultiplayer.html"/>
+        <link rel="next" title="Network Events" href="networkEvents.html"/>
+        <link rel="prev" title="Networking and Multiplayer" href="networkMultiplayer.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Terasology
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../projectOverview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#codebase-structure">Codebase-Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#sites">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#github-organizations">GitHub Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#external-projects">External Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projectOverview.html#history-and-more">History and more</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../developerIntro/developerIntro.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/quickStart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/lightWorkspace.html">Light Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#using-the-github-web-interface">Using the GitHub Web Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#creating-and-deleting-branches">Creating and Deleting Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#editing">Editing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#opening-a-pull-request">Opening a Pull Request</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#using-the-github-desktop-client">Using the GitHub Desktop Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#setting-up-the-client">Setting Up the Client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#cloning-your-repository">Cloning Your Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#creating-a-branch">Creating a Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#making-changes-and-committing">Making Changes and Committing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../developerIntro/lightWorkspace.html#opening-pull-requests">Opening Pull Requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/fullWorkspace.html">Full Workspace Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#run-game-from-source">Run game from source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#eclipse">Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/fullWorkspace.html#git">Git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/usingIrc.html">Using IRC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/usingIrc.html#irc-user-setup">IRC User Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/usingIrc.html#gooey">Gooey</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developerIntro/commonIssues.html">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#game">Game</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#intellij">IntelliJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#java">Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developerIntro/commonIssues.html#arch-gentoo-random-problems">Arch/Gentoo random problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts/concepts.html">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/blockWorld.html">Block World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/entitySystem.html#entities-and-components">Entities and Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/entitySystem.html#component-systems">Component Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/entitySystem.html#events">Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/assetSystem.html">Asset System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/assetSystem.html#prefabs">Prefabs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#structure-of-modules">Structure of Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#module-txt">module.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#namespace">Namespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../concepts/modules.html#guides">Guides</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../concepts/multiplayer.html">Networking and Multiplayer</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../developing.html">Developer Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../blocks/blocks.html">Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/blockDefinition.html">Block Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/accessingBlocks.html">Accessing Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/blockAttributes.html">Block Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#inheritance">Inheritance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#informational">Informational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#core-behavioural">Core behavioural</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#tiles">Tiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#rendering-options">Rendering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#color-lookup-tables">Color Lookup Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#shapes-and-rotation">Shapes and Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#collisions">Collisions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#entity-system-integration">Entity System Integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#inventory-settings">Inventory Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockAttributes.html#categories">Categories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/blockShapes.html">Shapes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapes.html#block-shape-basics">Block Shape Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapes.html#shape-parts">Shape Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapes.html#colliders">Colliders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapes.html#shape-example">Shape Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/blockShapesInBlender.html">Block Shapes In Blender</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapesInBlender.html#block-shape-addon-installation">Block Shape Addon Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapesInBlender.html#fundamentals">Fundamentals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapesInBlender.html#tips-when-creating-a-shape">Tips When Creating A Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapesInBlender.html#terasology-exporter-addon-properties">Terasology Exporter Addon Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../blocks/blockShapesInBlender.html#block-shape-video-tutorial">Block Shape Video Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/blockFamilies.html">Block Families</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../entitySystem/entitySystem.html">Entity System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../entitySystem/events.html">Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#defining-events">Defining events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#sending-events">Sending events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#processing-events">Processing events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/events.html#consumable-events">Consumable events</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../entitySystem/dependencyInjection.html">Dependency Injection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/dependencyInjection.html#inject-an-instance">Inject an Instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/dependencyInjection.html#share-a-class">Share a Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/dependencyInjection.html#how-it-works">How it works</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../entitySystem/commands.html">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#command-structure">Command structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#annotation-and-command-name">Annotation and Command Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#short-descriptions-and-help-text">Short Descriptions and Help Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#displaying-text">Displaying Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../entitySystem/commands.html#commands-and-multiplayer">Commands and Multiplayer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/modules.html">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#terasology-s-git-setup">Terasology’s Git Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#fetching-existing-modules">Fetching existing Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#create-a-new-module">Create a new Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#dependency-resolution">Dependency Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/modules.html#modding-api-sandboxing">Modding API &amp; Sandboxing</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="networkMultiplayer.html">Networking and Multiplayer</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Entities, Components on the Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#replicate-annotation">Replicate annotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#network-component">Network Component</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="networkEvents.html">Network Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="networkEvents.html#serverevent">ServerEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="networkEvents.html#broadcastevent">BroadcastEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="networkEvents.html#ownerevent">OwnerEvent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../input.html">User Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../input.html#define-bindings">Define Bindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../input.html#input-categories">Input Categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../input.html#handling-input-events">Handling Input Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../translation.html">Translation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../translation.html#internationalization-i18n">Internationalization / i18n</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translation.html#localization-l10n">Localization / l10n</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../translation.html#using-weblate">Using Weblate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../translation.html#manual-translation">Manual Translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../workflow/workflow.html">Conventions and Workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#creating-a-fork">Creating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#updating-a-fork">Updating a Fork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#creating-a-pull-request">Creating a Pull Request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/contributing.html#direct-write-access">Direct Write Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/versioning.html">Versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/versioning.html#snapshots">Snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/versioning.html#making-a-release">Making a Release</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/documentationJavaDoc.html">Documentation (JavaDoc)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#general-formatting">General Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#first-sentence">First Sentence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#html-tags">HTML Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#block-tags">Block Tags</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#code-and-link">&#64;code and &#64;link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#param-return-and-throws">&#64;param, &#64;return, and &#64;throws</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#author">&#64;author</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#what-to-document">What to Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#public-and-protected">Public and Protected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#null-tolerance-pre-and-postconditions">null-tolerance, Pre- and Postconditions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationJavaDoc.html#generate-html-javadoc">Generate HTML JavaDoc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/documentationExternal.html">Documentation (External)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/documentationExternal.html#sphinx-documentation">Sphinx Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#headlines">Headlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#javadoc-links">JavaDoc Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#external-links">External Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../workflow/documentationExternal.html#code-snippets">Code Snippets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../workflow/unitTests.html">Unit Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#why-tests">Why Tests?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#testing-libraries">Testing Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#guidelines-for-tests">Guidelines for Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../workflow/unitTests.html#game-environment-tests">Game Environment Tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../playing/playing.html">Playing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../playing/controls.html">Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../playing/console.html">Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../playing/serverHosting.html">Server Hosting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://oniatus.github.io/javadoc/index.html">JavaDoc (External)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Terasology</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../developing.html">Developer Guides</a> &raquo;</li>
+        
+          <li><a href="networkMultiplayer.html">Networking and Multiplayer</a> &raquo;</li>
+        
+      <li>Entities, Components on the Network</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developing/networkMultiplayer/networkEntity.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="entities-components-on-the-network">
+<span id="network-entities"></span><h1>Entities, Components on the Network<a class="headerlink" href="#entities-components-on-the-network" title="Permalink to this headline">¶</a></h1>
+<p>Unlike in single player, the client and the server reside on different instances in multiplayer. Therefore, components and entities have to be correctly configured to ensure that they work as intended in a multiplayer setting. Often, this means annotating the relevant fields with <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a>.</p>
+<div class="section" id="replicate-annotation">
+<h2>Replicate annotation<a class="headerlink" href="#replicate-annotation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> is an annotation used to mark types or fields to indicate that these types or fields should be replicated between the server and the client. In other words, when changes are made to these types or fields on the server, these changes will be reflected in the clients as well.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This page will focus on component fields and how they can be replicated by the network. However, take note that <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> can be applied on <code class="docutils literal"><span class="pre">component</span> <span class="pre">classes</span></code> as well. This is especially important for ensuring that empty components are correctly replicated.</p>
+</div>
+<p>To illustrate how <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> can be used, let’s take a look at a field in <code class="docutils literal"><span class="pre">ItemComponent</span></code>:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* How many of said item are there in this stack</span>
+<span class="cm">*/</span>
+<span class="nd">@Replicate</span><span class="o">(</span><span class="n">FieldReplicateType</span><span class="o">.</span><span class="na">SERVER_TO_CLIENT</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">byte</span> <span class="n">stackCount</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">stackCount</span></code> field in <code class="docutils literal"><span class="pre">ItemComponent</span></code> specifies the amount of items in the current stack.</p>
+<div class="section" id="fieldreplicatetype">
+<h3>FieldReplicateType<a class="headerlink" href="#fieldreplicatetype" title="Permalink to this headline">¶</a></h3>
+<p>As you can see, under the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> annotation, the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/FieldReplicateType.html" title="org.terasology.network.FieldReplicateType"><code class="xref java java-ref docutils literal"><span class="pre">FieldReplicateType</span></code></a> element is set to <code class="docutils literal"><span class="pre">SERVER_TO_CLIENT</span></code>. This annotation ensures that this when the value of the <code class="docutils literal"><span class="pre">stackCount</span></code> field of <code class="docutils literal"><span class="pre">ItemComponent</span></code> is updated on the server (i.e. when the stack size of the item changes), its value on all connected clients will be updated as well. Obviously very important as the number of items in a stack should be always be updated on all clients!</p>
+<p>Apart from <code class="docutils literal"><span class="pre">SERVER_TO_CLIENT</span></code>, there are also a few other values for <code class="docutils literal"><span class="pre">FieldReplicateType</span></code> that determine the circumstances under which the field will be replicated.</p>
+<table border="1" class="docutils" id="network-fieldreplicatetype">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">FieldReplicateType</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>SERVER_TO_CLIENT</strong> (default)</td>
+<td>The field will be replicated by the server to all clients connected to the server.</td>
+</tr>
+<tr class="row-odd"><td><strong>SERVER_TO_OWNER</strong></td>
+<td>The field will be replicated by the server to the client only if the client is the owner (i.e. the client belongs to the entity containing the component).</td>
+</tr>
+<tr class="row-even"><td><strong>OWNER_TO_SERVER</strong></td>
+<td>Functionally the same as <strong>OWNER_TO_SERVER_TO_CLIENT</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>OWNER_TO_SERVER_TO_CLIENT</strong></td>
+<td>The field will be replicated from the owner to the server. It will be then be replicated by the server to all connected clients that are not the owner.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="initialonly">
+<h3>initialOnly<a class="headerlink" href="#initialonly" title="Permalink to this headline">¶</a></h3>
+<p>You can also specify the value of the <code class="docutils literal"><span class="pre">initialOnly</span></code> element, which is false by default. When set to true, the field will only be replicated once when the entity containing the component first becomes relevant to the client.</p>
+<p>For instance in <code class="docutils literal"><span class="pre">ItemComponent</span></code>, it is used in <code class="docutils literal"><span class="pre">maxStackSize</span></code>:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="nd">@Replicate</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="n">FieldReplicateType</span><span class="o">.</span><span class="na">SERVER_TO_CLIENT</span><span class="o">,</span> <span class="n">initialOnly</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">byte</span> <span class="n">maxStackSize</span> <span class="o">=</span> <span class="mi">99</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Unlike <code class="docutils literal"><span class="pre">stackSize</span></code>, which might change over the course of a game as the player receives or uses the item, the <code class="docutils literal"><span class="pre">maxStackSize</span></code> of an item does not change. Therefore, the <code class="docutils literal"><span class="pre">initialOnly</span></code> element is set to true as the value of <code class="docutils literal"><span class="pre">maxStackSize</span></code> only needs to be replicated by the server to the client once when the <code class="docutils literal"><span class="pre">ItemComponent</span></code> first becomes relevant.</p>
+<p>To summarise, the server will send replicated fields only when:</p>
+<ol class="arabic simple">
+<li>It is the initial send of the component field</li>
+<li>The field is replicated from Server to Client</li>
+<li>The field is replicated from Server to Owner and the client owns the entity</li>
+<li>The field is replicated from owner and the client doesn’t own the entity</li>
+</ol>
+<p>The exception to this is when <code class="docutils literal"><span class="pre">initialOnly</span></code> is set to true and it isn’t the inital send of the component field.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is also the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NoReplicate.html" title="org.terasology.network.NoReplicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;NoReplicate</span></code></a> annotation, which is the opposite of <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> annotation. It specifies that a component field should <strong>not</strong> be replicated. By default, all fields except Event fields are not replicated.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Don’t forget to use <code class="docutils literal"><span class="pre">entityRef.saveComponent(component)</span></code> to save change of value in the component, or the change will not replicate.</p>
+</div>
+</div>
+</div>
+<div class="section" id="network-component">
+<h2>Network Component<a class="headerlink" href="#network-component" title="Permalink to this headline">¶</a></h2>
+<p>However, for updates to <code class="docutils literal"><span class="pre">component</span> <span class="pre">fields</span></code> of an entity to be replicated in a server, the entity needs to be registered on the network, which is where <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NetworkComponent.html" title="org.terasology.network.NetworkComponent"><code class="xref java java-ref docutils literal"><span class="pre">NetworkComponent</span></code></a> comes into the picture.</p>
+<p>When <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NetworkSystem.html" title="org.terasology.network.NetworkSystem"><code class="xref java java-ref docutils literal"><span class="pre">NetworkSystem</span></code></a> is first initialised, all entities containing a <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NetworkComponent.html" title="org.terasology.network.NetworkComponent"><code class="xref java java-ref docutils literal"><span class="pre">NetworkComponent</span></code></a> are registered on the network as network entities and given a network ID. While entities might have different IDs each time, network entities are linked to their respective entities through the network IDs, allowing these entities to survive dropping in and out of relevance.</p>
+<p>Similar to <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/FieldReplicateType.html" title="org.terasology.network.FieldReplicateType"><code class="xref java java-ref docutils literal"><span class="pre">FieldReplicateType</span></code></a>, the <code class="docutils literal"><span class="pre">ReplicateMode</span></code> enum determines which clients the entity should be replicated to (i.e. which clients the entity is registered on).</p>
+<table border="1" class="docutils" id="network-replicatemode">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">ReplicateMode</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>ALWAYS</strong></td>
+<td>The entity will always replicated to all clients connected to the server.</td>
+</tr>
+<tr class="row-odd"><td><strong>RELEVANT</strong> (default)</td>
+<td>The entity will only be replicated to clients where it was relevant (within a certain distance).</td>
+</tr>
+<tr class="row-even"><td><strong>OWNER</strong></td>
+<td>The entity will always be replicated to its owner.</td>
+</tr>
+</tbody>
+</table>
+<p>An example whereby both the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> annotation and <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NetworkComponent.html" title="org.terasology.network.NetworkComponent"><code class="xref java java-ref docutils literal"><span class="pre">NetworkComponent</span></code></a> are used is in the chest.</p>
+<p>Chests store their items in <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/logic/inventory/InventoryComponent.html" title="org.terasology.logic.inventory.InventoryComponent"><code class="xref java java-ref docutils literal"><span class="pre">InventoryComponent</span></code></a>, in the following List:</p>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="nd">@Replicate</span>
+<span class="nd">@Owns</span>
+<span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">EntityRef</span><span class="o">&gt;</span> <span class="n">itemSlots</span> <span class="o">=</span> <span class="n">Lists</span><span class="o">.</span><span class="na">newArrayList</span><span class="o">();</span>
+</pre></div>
+</div>
+<p>Again, the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/Replicate.html" title="org.terasology.network.Replicate"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Replicate</span></code></a> annotation ensures that whenever the value of the component field is updated on the server, this change will be reflected in all clients as well (recall that the default value of <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/FieldReplicateType.html" title="org.terasology.network.FieldReplicateType"><code class="xref java java-ref docutils literal"><span class="pre">FieldReplicateType</span></code></a> is <a class="reference internal" href="#network-fieldreplicatetype"><span class="std std-ref">SERVER_TO_CLIENT</span></a>). In other words, whenever a player modifies the items in the chest, others in the same server will be able to see this change.</p>
+<p>However, if the chest entity is not registered on the network, not all clients connected to the server might recognise the chest entity, preventing them from interacting with it. This is why <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NetworkComponent.html" title="org.terasology.network.NetworkComponent"><code class="xref java java-ref docutils literal"><span class="pre">NetworkComponent</span></code></a> is specified in <code class="docutils literal"><span class="pre">chest.prefab</span></code> as well:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">...</span>
+<span class="s2">&quot;Network&quot;</span><span class="o">:</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="p">...</span>
+</pre></div>
+</div>
+<p>Recall that the default <code class="docutils literal"><span class="pre">ReplicateMode</span></code> is <a class="reference internal" href="#network-replicatemode"><span class="std std-ref">RELEVANT</span></a>. This <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/network/NetworkComponent.html" title="org.terasology.network.NetworkComponent"><code class="xref java java-ref docutils literal"><span class="pre">NetworkComponent</span></code></a> thus ensures that the chest entity will always be replicated by the server to a client whenever it is relevant to the client, ensuring that all interactions with the chest work as intended.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="networkEvents.html" class="btn btn-neutral float-right" title="Network Events" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="networkMultiplayer.html" class="btn btn-neutral" title="Networking and Multiplayer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terasology.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
