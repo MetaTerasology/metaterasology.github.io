@@ -377,7 +377,7 @@
         
             
             
-              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developing/entitySystem/commands.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/MovingBlocks/TerasologyDocs/blob/master/source/developing/entitySystem/commands.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -398,7 +398,7 @@
 Command implementation</p>
 <div class="section" id="command-structure">
 <h2>Command structure<a class="headerlink" href="#command-structure" title="Permalink to this headline">¶</a></h2>
-<p>Every command must be implemented as a public method of a <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/entitySystem/system/ComponentSystem.html" title="org.terasology.entitySystem.system.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a>. <strong>E.g.</strong> the following command just displays “hello world” in the console.</p>
+<p>Every command must be implemented as a public method of a <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/entitySystem/system/ComponentSystem.html" title="org.terasology.entitySystem.system.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a>. <strong>E.g.</strong> the following command just displays “hello world” in the console.</p>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="nd">@RegisterSystem</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyCommands</span> <span class="kd">extends</span> <span class="n">BaseComponentSystem</span> <span class="o">{</span>
 
@@ -412,15 +412,15 @@ Command implementation</p>
 </div>
 <p>Looking at this simple examples we can see several important things:</p>
 <ul class="simple">
-<li>The command method must be located in a class implementing <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/entitySystem/system/ComponentSystem.html" title="org.terasology.entitySystem.system.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a></li>
-<li>The command annotation <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/logic/console/commandSystem/annotations/Command.html" title="org.terasology.logic.console.commandSystem.annotations.Command"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Command</span></code></a> is necessary for every command</li>
+<li>The command method must be located in a class implementing <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/entitySystem/system/ComponentSystem.html" title="org.terasology.entitySystem.system.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a></li>
+<li>The command annotation <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/logic/console/commandSystem/annotations/Command.html" title="org.terasology.logic.console.commandSystem.annotations.Command"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Command</span></code></a> is necessary for every command</li>
 <li>One can specify a short description and a (probably) longer help text</li>
 <li>A returned string will be shown in the console.</li>
 </ul>
 </div>
 <div class="section" id="annotation-and-command-name">
 <h2>Annotation and Command Name<a class="headerlink" href="#annotation-and-command-name" title="Permalink to this headline">¶</a></h2>
-<p>To specify a new console command, just an <strong>annotated public method</strong> is needed in a <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/entitySystem/system/ComponentSystem.html" title="org.terasology.entitySystem.system.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a>. The annotation is</p>
+<p>To specify a new console command, just an <strong>annotated public method</strong> is needed in a <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/entitySystem/system/ComponentSystem.html" title="org.terasology.entitySystem.system.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a>. The annotation is</p>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="nd">@Command</span>
 </pre></div>
 </div>
@@ -441,7 +441,7 @@ Command implementation</p>
 <div class="section" id="displaying-text">
 <h2>Displaying Text<a class="headerlink" href="#displaying-text" title="Permalink to this headline">¶</a></h2>
 <p>Any value returned from the command (<code class="docutils literal"><span class="pre">String</span></code> or <code class="docutils literal"><span class="pre">Object</span></code>) will be displayed in the in game <a class="reference internal" href="../../playing/console.html"><span class="doc">console</span></a>.</p>
-<p>You can also write directly to the console via the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/logic/console/Console.html" title="org.terasology.logic.console.Console"><code class="xref java java-ref docutils literal"><span class="pre">Console</span></code></a> class.</p>
+<p>You can also write directly to the console via the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/logic/console/Console.html" title="org.terasology.logic.console.Console"><code class="xref java java-ref docutils literal"><span class="pre">Console</span></code></a> class.</p>
 </div>
 <div class="section" id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>

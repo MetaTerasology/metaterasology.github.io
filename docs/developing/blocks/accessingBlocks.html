@@ -377,7 +377,7 @@
         
             
             
-              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developing/blocks/accessingBlocks.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/MovingBlocks/TerasologyDocs/blob/master/source/developing/blocks/accessingBlocks.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -400,7 +400,7 @@ then it is made available as a full block via the uri <code class="code docutils
 where the _moduleName_ is the id of the containing module or <code class="code docutils literal"><span class="pre">engine</span></code> for build in blocks.
 The blockName is the filename of the block (ignoring the extension).
 It can also be requested in any shape by using the uri <code class="code docutils literal"><span class="pre">blockModule:blockName:shapeModule:shapeName</span></code>.</p>
-<p>The engine provides an api to access blocks, the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/world/block/BlockManager.html" title="org.terasology.world.block.BlockManager"><code class="xref java java-ref docutils literal"><span class="pre">BlockManager</span></code></a>.
+<p>The engine provides an api to access blocks, the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/world/block/BlockManager.html" title="org.terasology.world.block.BlockManager"><code class="xref java java-ref docutils literal"><span class="pre">BlockManager</span></code></a>.
 For example to get a stair pointing to the left from <code class="code docutils literal"><span class="pre">BirchTrunk.block</span></code> (defined in the core module), inject the block manager:</p>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="nd">@In</span>
 <span class="kd">private</span> <span class="n">BlockManager</span> <span class="n">blockManager</span><span class="o">;</span>

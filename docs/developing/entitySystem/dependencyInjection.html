@@ -377,7 +377,7 @@
         
             
             
-              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developing/entitySystem/dependencyInjection.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/MovingBlocks/TerasologyDocs/blob/master/source/developing/entitySystem/dependencyInjection.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -393,13 +393,13 @@
             
   <div class="section" id="dependency-injection">
 <h1>Dependency Injection<a class="headerlink" href="#dependency-injection" title="Permalink to this headline">¶</a></h1>
-<p>A <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/entitySystem/systems/ComponentSystem.html" title="org.terasology.entitySystem.systems.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a>
+<p>A <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/entitySystem/systems/ComponentSystem.html" title="org.terasology.entitySystem.systems.ComponentSystem"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem</span></code></a>
 is not able to do much on its own except <a class="reference internal" href="events.html#events"><span class="std std-ref">sending an receiving events</span></a>.
 If it needs access to further logic, for example to modify blocks, has to use additional services from the engine.</p>
 <div class="section" id="inject-an-instance">
 <h2>Inject an Instance<a class="headerlink" href="#inject-an-instance" title="Permalink to this headline">¶</a></h2>
 <p>The engine provides a mechanism for field injection to component systems. One example to obtain an instance of a
-<a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/world/block/BlockManager.html" title="org.terasology.world.block.BlockManager"><code class="xref java java-ref docutils literal"><span class="pre">BlockManager</span></code></a> could look like this:</p>
+<a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/world/block/BlockManager.html" title="org.terasology.world.block.BlockManager"><code class="xref java java-ref docutils literal"><span class="pre">BlockManager</span></code></a> could look like this:</p>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="nd">@RegisterSystem</span><span class="o">(</span><span class="n">RegisterMode</span><span class="o">.</span><span class="na">ALWAYS</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MySystem</span> <span class="kd">extends</span> <span class="n">BaseComponentSystem</span> <span class="o">{</span>
 
@@ -408,13 +408,13 @@ If it needs access to further logic, for example to modify blocks, has to use ad
 <span class="o">}</span>
 </pre></div>
 </div>
-<p>When a component system is created, all fields marked with the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/registry/In.html" title="org.terasology.registry.In"><code class="xref java java-ref docutils literal"><span class="pre">&#64;In</span></code></a> annotation will be injected.
+<p>When a component system is created, all fields marked with the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/registry/In.html" title="org.terasology.registry.In"><code class="xref java java-ref docutils literal"><span class="pre">&#64;In</span></code></a> annotation will be injected.
 The fields do not have to be public, it is even recommended to mark them as <strong>private</strong>.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <ol class="last arabic simple">
 <li>Injected fields are <code class="code docutils literal"><span class="pre">null</span></code> when the class is created, so don’t access them in the constructor.</li>
-<li>Other systems may not be initialized before <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/entitySystem/systems/ComponentSystem.html#initialise--" title="org.terasology.entitySystem.systems.ComponentSystem.initialise()"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem.initialise()</span></code></a> is called.
+<li>Other systems may not be initialized before <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/entitySystem/systems/ComponentSystem.html#initialise--" title="org.terasology.entitySystem.systems.ComponentSystem.initialise()"><code class="xref java java-ref docutils literal"><span class="pre">ComponentSystem.initialise()</span></code></a> is called.
 It is not guaranteed, that other systems are already initialized when they are accessed in the <code class="code docutils literal"><span class="pre">initialize()</span></code> method.</li>
 </ol>
 </div>
@@ -422,7 +422,7 @@ It is not guaranteed, that other systems are already initialized when they are a
 <div class="section" id="share-a-class">
 <h2>Share a Class<a class="headerlink" href="#share-a-class" title="Permalink to this headline">¶</a></h2>
 <p>It is also possible to make own implementations available for dependency injection.
-A system marked with the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/registry/Share.html" title="org.terasology.registry.Share"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Share</span></code></a> annotation is registered to be injected in other classes.</p>
+A system marked with the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/registry/Share.html" title="org.terasology.registry.Share"><code class="xref java java-ref docutils literal"><span class="pre">&#64;Share</span></code></a> annotation is registered to be injected in other classes.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">It is highly recommended to share an interface instead of the exact class.</p>
@@ -457,9 +457,9 @@ A system marked with the <a class="reference external" href="https://oniatus.git
 <div class="section" id="how-it-works">
 <h2>How it works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
 <p>There are two systems to register classes for dependency injection.
-The <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/registry/CoreRegistry.html" title="org.terasology.registry.CoreRegistry"><code class="xref java java-ref docutils literal"><span class="pre">CoreRegistry</span></code></a> is the older system and provides a static mapping from classes to instances, comparable to a singleton pattern.</p>
-<p>The <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/context/Context.html" title="org.terasology.context.Context"><code class="xref java java-ref docutils literal"><span class="pre">Context</span></code></a> does pretty much the same in a non-static way and should be used for every new implementation in the dependency injection layer.</p>
-<p>Logic for the actual dependency injection is available in the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/registry/InjectionHelper.html" title="org.terasology.registry.InjectionHelper"><code class="xref java java-ref docutils literal"><span class="pre">InjectionHelper</span></code></a>.
+The <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/registry/CoreRegistry.html" title="org.terasology.registry.CoreRegistry"><code class="xref java java-ref docutils literal"><span class="pre">CoreRegistry</span></code></a> is the older system and provides a static mapping from classes to instances, comparable to a singleton pattern.</p>
+<p>The <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/context/Context.html" title="org.terasology.context.Context"><code class="xref java java-ref docutils literal"><span class="pre">Context</span></code></a> does pretty much the same in a non-static way and should be used for every new implementation in the dependency injection layer.</p>
+<p>Logic for the actual dependency injection is available in the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/registry/InjectionHelper.html" title="org.terasology.registry.InjectionHelper"><code class="xref java java-ref docutils literal"><span class="pre">InjectionHelper</span></code></a>.
 It provides methods to inject fields in a class from a given context or the core registry.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>

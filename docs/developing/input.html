@@ -375,7 +375,7 @@
         
             
             
-              <a href="https://github.com/oniatus/TerasologyDocs/blob/master/source/developing/input.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/MovingBlocks/TerasologyDocs/blob/master/source/developing/input.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -401,20 +401,20 @@ Most of the input system is available through annotations which require little p
 <span class="o">}</span>
 </pre></div>
 </div>
-<p>The <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/RegisterBindButton.html" title="org.terasology.input.RegisterBindButton"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterBindButton</span></code></a> annotation marks this class as a button event for a key binding.
-A default binding can be defined via the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/DefaultBinding.html" title="org.terasology.input.DefaultBinding"><code class="xref java java-ref docutils literal"><span class="pre">&#64;DefaultBinding</span></code></a> annotation.
+<p>The <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/RegisterBindButton.html" title="org.terasology.input.RegisterBindButton"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterBindButton</span></code></a> annotation marks this class as a button event for a key binding.
+A default binding can be defined via the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/DefaultBinding.html" title="org.terasology.input.DefaultBinding"><code class="xref java java-ref docutils literal"><span class="pre">&#64;DefaultBinding</span></code></a> annotation.
 In this case, this would be the <code class="code docutils literal"><span class="pre">W</span></code> key.
-And as the class is used for a button binding, it has to extend <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/BindButtonEvent.html" title="org.terasology.input.BindButtonEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindButtonEvent</span></code></a>.</p>
+And as the class is used for a button binding, it has to extend <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/BindButtonEvent.html" title="org.terasology.input.BindButtonEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindButtonEvent</span></code></a>.</p>
 <div class="section" id="define-bindings">
 <h2>Define Bindings<a class="headerlink" href="#define-bindings" title="Permalink to this headline">¶</a></h2>
 <p>To define an own binding, one needs to create a subclass of:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/BindButtonEvent.html" title="org.terasology.input.BindButtonEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindButtonEvent</span></code></a>,
-annotated with <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/RegisterBindButton.html" title="org.terasology.input.RegisterBindButton"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterBindButton</span></code></a> for keyboard input.</li>
-<li><a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/BindAxisEvent.html" title="org.terasology.input.BindAxisEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindAxisEvent</span></code></a>,
-annotated with <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/RegisterBindAxis.html" title="org.terasology.input.RegisterBindAxis"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterBindAxis</span></code></a> or <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/RegisterRealBindAxis.html" title="org.terasology.input.RegisterRealBindAxis"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterRealBindAxis</span></code></a> for controller input.</li>
+<li><a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/BindButtonEvent.html" title="org.terasology.input.BindButtonEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindButtonEvent</span></code></a>,
+annotated with <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/RegisterBindButton.html" title="org.terasology.input.RegisterBindButton"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterBindButton</span></code></a> for keyboard input.</li>
+<li><a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/BindAxisEvent.html" title="org.terasology.input.BindAxisEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindAxisEvent</span></code></a>,
+annotated with <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/RegisterBindAxis.html" title="org.terasology.input.RegisterBindAxis"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterBindAxis</span></code></a> or <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/RegisterRealBindAxis.html" title="org.terasology.input.RegisterRealBindAxis"><code class="xref java java-ref docutils literal"><span class="pre">&#64;RegisterRealBindAxis</span></code></a> for controller input.</li>
 </ul>
-<p><a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/DefaultBinding.html" title="org.terasology.input.DefaultBinding"><code class="xref java java-ref docutils literal"><span class="pre">&#64;DefaultBinding</span></code></a> can and should be used in both cases, it is also possible to define multiple defaults for the same binding by using the annotation multiple time.</p>
+<p><a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/DefaultBinding.html" title="org.terasology.input.DefaultBinding"><code class="xref java java-ref docutils literal"><span class="pre">&#64;DefaultBinding</span></code></a> can and should be used in both cases, it is also possible to define multiple defaults for the same binding by using the annotation multiple time.</p>
 <p>A full example for a key binding that logs a greeting message when the user presses <code class="code docutils literal"><span class="pre">G</span></code> could look like this:</p>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">org.terasology.examplemodule.binds</span><span class="o">;</span>
 
@@ -436,13 +436,13 @@ annotated with <a class="reference external" href="https://oniatus.github.io/jav
 Both of these values are required for the input category, as shown in the next snippet.</p>
 <p>The description is a <a class="reference internal" href="translation.html#translation"><span class="std std-ref">Translation</span></a> identifier
 and the mode restricts the event to a button <code class="code docutils literal"><span class="pre">PRESS</span></code> instead of triggering for press and release.
-The default binding maps to the key <code class="code docutils literal"><span class="pre">G</span></code> and as the class is a button binding, it extends <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/BindButtonEvent.html" title="org.terasology.input.BindButtonEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindButtonEvent</span></code></a>.</p>
+The default binding maps to the key <code class="code docutils literal"><span class="pre">G</span></code> and as the class is a button binding, it extends <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/BindButtonEvent.html" title="org.terasology.input.BindButtonEvent"><code class="xref java java-ref docutils literal"><span class="pre">BindButtonEvent</span></code></a>.</p>
 </div>
 <div class="section" id="input-categories">
 <h2>Input Categories<a class="headerlink" href="#input-categories" title="Permalink to this headline">¶</a></h2>
 <p>The binding from the previous example would work on its own but is not shown in the input settings.
 To register binds to the input configuration, input categories are used.</p>
-<p>They can be registered via the <a class="reference external" href="https://oniatus.github.io/javadoc/org/terasology/input/InputCategory.html" title="org.terasology.input.InputCategory"><code class="xref java java-ref docutils literal"><span class="pre">&#64;InputCategory</span></code></a> annotation,
+<p>They can be registered via the <a class="reference external" href="http://jenkins.terasology.org/job/Terasology/javadoc/org/terasology/input/InputCategory.html" title="org.terasology.input.InputCategory"><code class="xref java java-ref docutils literal"><span class="pre">&#64;InputCategory</span></code></a> annotation,
 which is used to annotate a package, therefore in the <code class="code docutils literal"><span class="pre">package-info.java</span></code> file.
 The event is contained in the package <code class="code docutils literal"><span class="pre">org.terasology.examplemodule.binds</span></code>,
 therefore a <code class="code docutils literal"><span class="pre">package-info.java</span></code> is required in the same package.</p>
